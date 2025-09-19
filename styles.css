@@ -8,7 +8,64 @@ body {
 }
 header {
   text-align: center;
+  padding: 30px;body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
   padding: 30px;
+  background: #1f1f1f;
+}
+header h1 {
+  margin: 10px 0;
+  font-size: 2.5em;
+}
+header p {
+  color: #bbb;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+h2 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+a {
+  color: #4ea3f1;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1f1f1f;
+  margin-top: 20px;
+  color: #999;
+}
+
   background: #1f1f1f;
 }
 header h1 {
