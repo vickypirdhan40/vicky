@@ -1,92 +1,72 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #121212;
-  color: #f0f0f0;
-  line-height: 1.6;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
+
 header {
-  text-align: center;
-  padding: 30px;
-  background: #1f1f1f;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
-header h1 {
-  margin: 10px 0;
-  font-size: 2.5em;
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
 }
-header p {
-  color: #bbb;
+
+.logo img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  object-fit: cover;
+
+#portfolio {
+    padding: 20px;
 }
-section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
-h2 {
-  border-bottom: 2px solid #444;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+
+.portfolio-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
 }
-.logos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 15px;
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-.logos img {
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  background: #fff;
-  border-radius: 10px;
-  padding: 10px;
+
+.portfolio-item a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
 }
-.slider {
-  position: relative;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-  border-radius: 10px;
-  border: 2px solid #444;
-}
-.slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.slides img {
-  width: 800px;
-  height: 400px;
-  object-fit: cover;
-}
-.prev, .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: white;
-  border: none;
-  font-size: 2em;
-  cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 50%;
-}
-.prev { left: 10px; }
-.next { right: 10px; }
+
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #1f1f1f;
-  margin-top: 20px;
-  color: #999;
-}
-a {
-  color: #4ea3f1;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
